@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{-- <link rel="stylesheet" href="/css/style.css"> --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>survey</title>
+</head>
+<body class="bg-pink-600 text-gray-50 bg-blend-overlay bg-[url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80')]" >
+    {{-- <div class="absolute w-full h-full flex flex-col bg-gradient-to-br from-pink-500 to pink-800 opacity-50 -z-50">  </div> --}}
+    <div class="flex flex-col items-center  p-7 max-w-xl mx-auto">
+        <h1 class="text-3xl font-semibold p-6">Free Survey Form</h1>
+            <h2 class="text-lg italic mt-2">Please taking time to make this survey  </h2>
+    </div>
+     <form class="bg-pink-700 p-10 mb-20 max-w-xl mx-auto">
+        <div class="flex flex-col">
+        <label class="mt-4 font-medium">Name</label>
+        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Enter Your Name" type="text" required/>
+        </div>
+        <div class="flex flex-col">
+            <label class="mt-4 font-medium">Email</label>
+            <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Enter Your Email" type="email" required/>
+        </div>
+            <div class="flex flex-col">
+                <label class="mt-4 font-medium">Age (Optional)</label >
+                <input class="p-2.5 text-gray-900 mt-1 rounded text-sm" placeholder="Age" type="number"/>
+            </div>
+                <div class="flex flex-col">
+                    <label class="mt-4 font-medium">Which option best describe your current role?</label >
+                    <select class="p-2.5 text-gray-900 mt-1 rounded text-sm">
+                        <option disabled selected>select current role</option>
+                        <option>student</option>
+                        <option>Full Time Job</option>
+                        <option>Part Time Job</option>
+                        <option>Prefered not to say</option>
+                    </select>
+               </div>
+                    <div class="flex flex-col">
+                        <label class="mt-4 font-medium">Would you recomended this to your friend?</label >
+                        <div>
+                            <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="radio" name="recommend" id="definitely" />
+                            <label for="definitely">Definitely</label>
+                       </div>
+                        <div>
+                            <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="radio" name="recommend" id="maybe"/>
+                            <label for="maybe">Maybe</label>
+                        </div>
+                        
+                        <div>
+                            <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="radio" name="recommend" id="Not-sure"/>
+                            <label for="Not-sure">Not sure</label>
+                        </div>
+                    </div>
+
+                        <div class="flex flex-col">
+                            <label class="mt-4 font-medium">What is your favourite feature for this technology?</label >
+                            <select class="p-2.5 text-gray-900 mt-1 rounded text-sm">
+                                <option disabled selected>select an option</option>
+                                <option>Challenges</option>
+                                <option>projects</option>
+                                <option>Community</option>
+                                <option>Open source</option>
+                                <option>Others</option>
+                            </select>
+                        </div>  
+                            
+                            <div class="flex flex-col ">
+                                <label class="mt-4 font-medium">Would you like to see improved? (Check all that apply)</label >
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Front-end Projects"/>
+                                        <label for="Front-end Projects">Front-end Projects</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Back-end Projects"/>
+                                        <label for="Back-end Projects">Back-end Projects</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Data Visualization"/>
+                                        <label for="Data Visualization">Data Visualization</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm  "  type="checkbox" name="improvement" id="Challenges"/>
+                                        <label for="Challenges">Challenges</label>
+                                    </div>
+
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Open Source Community"/>
+                                        <label for="Open Source Community">Open Source Community</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Gitter help rooms"/>
+                                        <label for="Gitter help rooms">Gitter help rooms</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Videos"/>
+                                        <label for="Videos">Videos</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="City Meetups"/>
+                                        <label for="City Meetups">City Meetups</label>
+                                    </div>
+
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Wiki"/>
+                                        <label for="Wiki">Wiki</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Forum"/>
+                                        <label for="Forum">Forum</label>
+                                    </div>
+                                    <div>
+                                        <input class="p-2.5 text-gray-900 mt-1 rounded text-sm"  type="checkbox" name="improvement" id="Additional Courses"/>
+                                        <label for="Additional Courses">Additional Courses</label>
+                                    </div>
+                            </div> 
+
+                                <div class="flex flex-col">
+                                    <label class="mt-4 font-medium">Any comments or suggestion?</label>
+                                    <textarea class=" p-2.5 text-gray-900 mt-1  mt-1 rounded text-sm min-h-[110px]" placeholder="Enter your comments here.."></textarea>   
+                                </div>
+                                    <button class="w-full bg-emerald-500 mt-5 p-2.5 text-sm font-medium hover:bg-orange-300 active:bg-orange-500">Submit</button>
+     </form>
+    
+
+</body>
+</html>
